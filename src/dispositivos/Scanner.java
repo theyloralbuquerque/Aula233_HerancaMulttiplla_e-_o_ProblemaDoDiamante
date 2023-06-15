@@ -1,17 +1,7 @@
 package dispositivos;
 
-public class Scanner extends Dispositivo {
+public interface Scanner {
 
-    public Scanner(String numeroDeSerie) {
-        super(numeroDeSerie);
-    }
+    String scan();
 
-    @Override
-    public void processarDoc(String doc) {
-        System.out.println("Processando scanner: " + doc);
-    }
-
-    public String scan() {
-        return "Conteúdo Scanneado!";
-    }
 }
